@@ -1,0 +1,495 @@
+/****************************** Font Styles ******************************************/
+
+h1 {
+    font-family: 'Avenir Next Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: black;
+}
+
+h2 {
+    font-family: 'Avenir Next Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: black;
+}
+
+h3 {
+    font-family: 'Avenir Next Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    color: black;
+    padding-top: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Avenir Next Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: black;
+}
+/****************************** End of Font Styles ******************************************/
+
+
+/* Logo font style */
+.logo {
+    font-family: 'Avenir Next Condensed', cursive;
+    font-size: 1.5em;
+}
+/*Logo padding */
+#logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Header */
+.box {
+    border-top: 1pt;
+    border-top-style: solid;
+    border-top-color: black;
+    border-bottom: 1pt;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    margin-bottom: 35px;
+}
+.navbar {
+    content: justify !important;
+}
+.nav-link {
+    color: black !important;
+    text-align: center;
+}
+.nav-link:hover {
+    color: #FBEFEF !important;
+
+}
+.navbar .active {
+    text-decoration: underline !important;
+}
+
+/* Main */
+.section {
+    margin-bottom: 70px;
+}
+.container {
+    position: relative;
+    margin: auto;
+}
+
+.row {
+    padding-top: 40pt;
+}
+
+/****************************** Parallax Section ******************************************/
+
+.parallax {
+    /* The image used */
+    background-image: url("images/banner\ image\ dr\ 1.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.parallax h2 {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+.parallax p {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+}
+/****************************** End of Parallax Section ******************************************/
+
+.small-image {
+    margin-bottom: 20px;
+}
+.image-text {
+    position: absolute;
+    top: 260pt;
+    left: 100pt;
+}
+.image-text-p {
+    position: absolute;
+    top: 300pt;
+    left: 100pt;
+}
+.name {
+    text-align: center;
+    padding-top: 15pt;
+    padding-bottom: 10pt;
+
+}
+
+.caption {
+    position: absolute;
+    font-weight: 500;
+    font-size: 1.7em;
+    color: black;
+    font-style: italic;
+    margin-top: 60px;
+
+}
+.banner {
+    max-width: 100%;
+    margin-top: 40pt;
+    align-content: center;
+    border: 10pt;
+    border-color: #FBEFEF;
+    border-style: solid;
+}
+
+.header {
+    padding: 0;
+
+}
+/* Row with image and text */
+
+
+/*.flexbox {
+    display: flex;
+    flex-wrap: wrap;*/
+
+
+.graphic_line {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.line {
+  width: 100%;
+}
+/****************************** Values ******************************************/
+.values h2 {
+    text-align: center;
+    font-size: 2em;
+}
+/****************************** End Values ******************************************/
+
+/****************************** Designer Statement ******************************************/
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+}
+#inside-text {
+    height: 500px;
+    overflow: scroll;
+}
+.inside-text {
+    display: flex;
+}
+.aside-element {
+    width: 20%;
+    display: block;
+    float: right;
+}
+
+
+/****************************** End Designer Statement  ******************************************/
+
+/*    
+.section-editors { position: relative; }
+.section-editors .section__inner { display: -ms-flexbox; display: flex; -ms-flex-flow: row wrap; flex-flow: row wrap; -ms-flex-pack: justify; justify-content: space-between;
+  position: absolute; top:0; left:0; width: 100%;
+}
+.section-editors.fixed .section__inner { position: fixed; top:151px; }
+.section-editors.at-bottom .section__inner { position: absolute; top:auto; bottom:0; }.section-editors .section__aside { width: 20%; }
+.section-editors .section__aside img { width: 100%; }
+.section-editors .section__aside a { text-decoration: none; display: inline-block; vertical-align: middle; font-size:12px; text-transform: uppercase; font-family: 'minion-3', serif; margin-top:14px; }
+.section-editors .section__aside--left { text-align:right; }
+.section-editors .section__body { -ms-flex:1; flex:1; text-align:center; padding: 0 96px; font-size:20px; letter-spacing: 0.04em; }
+.section-editors .section__shell { max-width: 60%; margin: 0 auto; }
+.section-editors .section__title { line-height:1; }
+.section-editors .section__title strong { font-family: 'AkzidenzGrotesk_Bold', Helvetica, sans-serif; display:block; font-size:172px;  text-transform: uppercase; line-height:1; }
+.section-editors .section__title span > span { font-size:55px; font-family: 'AkzidenzGrotesk_Bold', Helvetica, sans-serif; font-weight:500; }
+.section-editors .strong { text-transform: uppercase; font-size:20px; font-family: 'minion-3', serif; letter-spacing: 0; }
+.section-editors .quote { text-transform: uppercase; font-family: 'AkzidenzGrotesk_Bold', Helvetica, sans-serif; font-style: normal; font-weight:400; letter-spacing: 0.1em; }
+.section-editors .quote:before { content:'â€œ'; display:block; font-size:62px; font-weight:300; margin-bottom:-5px; }
+.section-editors .quote:after { content:'â€'; display:block; font-size:62px; font-weight:300; margin-top:30px; }
+*/
+.graphic_runner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.textbox {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.6em !important;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-weight: 500;
+    /*padding: 20px 300px 20px 30px;*/
+    margin-bottom: 0;
+    text-align: center;
+}
+.textbox-p {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+}
+
+.container {
+    width: 100%;
+    vertical-align: middle;
+
+
+}
+
+.padding {
+    padding: 20px 20px 20px 20px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+
+}
+
+.strong {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #c22038;
+    /* font-weight: 700;*/
+}
+
+#image2 {
+    background: url(images/02.JPG);
+    background-size: cover;
+}
+
+#timeline {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    background: url(images/03.JPG);
+    background-size: cover;
+
+}
+
+.contact {
+    font-family: 'Nothing You Could Do', cursive !important;
+    /*padding: 50px 150px 20px 150px;*/
+    font-size: 1.6em;
+    color: black;
+    text-shadow: 1px 2px 2px #fff;
+    font-style: italic;
+    text-align: left;
+}
+
+
+.center {
+    text-align: center;
+}
+
+#button {
+    background-color: #c22038;
+    width: 200px;
+    margin-bottom: 50px;
+
+}
+
+.formname {
+    font-family: 'Nothing You Could Do', cursive;
+    width: 400px;
+    height: 200px;
+}
+
+.formemail {
+    font-family: 'Nothing You Could Do', cursive;
+    width: 400px;
+    height: 40px;
+
+}
+
+.formbutton {
+    font-family: 'Nothing You Could Do', cursive;
+    width: 200px;
+    height: 40px;
+    background-color: #c22038;
+    color: white;
+
+}
+ /*Footer background */
+.page-footer {
+    font-family: 'Avenir Next', sans-serif;
+    background-color: black;
+    color: white;
+}
+.links{
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #fff;
+
+}
+.links:hover {
+    color: #FBEFEF;
+    text-decoration: underline;
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .name {
+    font-size: 1.5em;
+    }
+    .textbox {
+        padding: 50px 20px 20px 20px;
+        order: 2;
+    }
+    .caption {
+        padding: 10px 5px 10px 5px;
+        font-size: 1.3em;
+        margin-top: 0;
+        width: 100%;
+        text-align: left;
+    }
+    .logo {
+        order: -1;
+    }
+    .runner {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .formname {
+        width: 300px;
+        height: 200px;
+    }
+
+    .formemail {
+        width: 300px;
+        height: 40px;
+
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .textbox {
+        padding: 20px 20px 20px 20px;
+        font-size: 1.1em
+    }
+    .caption {
+        padding: 10px 5px 10px 5px;
+        font-size: 1.5em;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .runner {
+        margin-top: 20px;
+    }
+    .formname {
+        width: 300px;
+        height: 200px;
+    }
+
+    .formemail {
+        width: 300px;
+        height: 40px;
+
+    }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .textbox {
+        padding: 20px 20px 20px 20px;
+        order: 2;
+        font-size: 1.2em
+    }
+    ul {
+        font-size: 1.1em;
+    }
+    .caption {
+        padding: 10px 5px 10px 5px;
+        font-size: 1.5em;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    }
+    .runner {
+        margin-top: 0;
+  
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .textbox {
+        padding: 20px 20px 20px 20px;
+        order: 2;
+        font-size: 1.3em
+    }
+    p {
+        font-size: 1.2em;
+    }
+    ul {
+        font-size: 1.2em;
+    }
+    .caption {
+        padding: 10px 5px 10px 5px;
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    .runner {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .textbox {
+        padding: 20px 20px 20px 20px;
+        order: 2;
+        font-size: 1.3em
+    }
+    p {
+        font-size: 1.2em;
+    }
+    ul {
+        font-size: 1.2em;
+    }
+    .runner {
+        margin-top: 30px;
+    }
+}
+
+/* 
+.about {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.col-sm {
+    
+}
