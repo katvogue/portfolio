@@ -179,24 +179,55 @@ p {
 /****************************** End Values ******************************************/
 
 /****************************** Designer Statement ******************************************/
-aside {
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    float: right;
-}
+
+
 #inside-text {
-    height: 500px;
+    height: 400px;
     overflow: scroll;
 }
-.inside-text {
-    display: flex;
+.inner-section {
+    width: 100%;
+    margin: auto;
 }
+.inside-text {
+    max-width: 60%;
+    display: block;
+    flex-flow: row;
+    text-align: center;
+    margin: auto;
+    background: #fff;
+}
+.section-inner .image {
+display: flex;
+flex-flow: row-wrap;
+justify-content: space-between;
+
+}
+aside {
+    width: 20%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+}
+
 .aside-element {
     width: 20%;
-    display: block;
-    float: right;
+    display: flex !important;
 }
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+.aside-image {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+  
+}
+
 
 
 /****************************** End Designer Statement  ******************************************/
