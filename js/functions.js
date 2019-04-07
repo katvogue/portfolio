@@ -20,3 +20,5 @@
             });
         });
     }
+    /** Scrol spy */
+    $('body').scrollspy({ target: '#product-inner' })

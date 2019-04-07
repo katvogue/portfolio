@@ -30,12 +30,14 @@ p {
     color: black;
 }
 /****************************** End of Font Styles ******************************************/
-
+body {
+    position: relative;
+  }
 
 ul {
     list-style-type: none;
   }
-  
+
 /* Logo font style */
 .logo {
     font-family: 'Avenir Next Condensed', cursive;
@@ -256,15 +258,9 @@ aside {
 .section-editors .quote:before { content:'â€œ'; display:block; font-size:62px; font-weight:300; margin-bottom:-5px; }
 .section-editors .quote:after { content:'â€'; display:block; font-size:62px; font-weight:300; margin-top:30px; }
 */
-.graphic_runner {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%
-}
 
-.description {
-    margin-bottom: 40px;
-}
+
+
 
 .textbox {
     font-family: 'Nothing You Could Do', cursive;
@@ -336,9 +332,10 @@ aside {
 }
 
 #button {
-    background-color: #c22038;
+    background-color: white;
+    border-color: black;
     width: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
 }
 
@@ -527,4 +524,30 @@ aside {
 
 .col-sm {
     
+}*/
+
+/* Product page */
+
+.product {
+    max-height: 600px;
 }
+#product-inner {
+    max-height: 600px;
+}
+.scrollspy-example {
+    overflow: scroll;
+    height: 500px;
+}
+.scroll-image-item {
+    width: 100%;
+}
+a.list-group-item.list-group-item-action.active {
+    background-color: rgba(212, 203, 201, 0.2) !important;
+    border-color: rgba(212, 203, 201, 0.2) !important;
+}
+ul.detail {
+    font-size: 14px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Product page */

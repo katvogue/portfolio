@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfectly Normal - Wardrobe essentials and accessories by Katya Kuzheleva</title>
+    <meta name="author" content="Perfectly Normal">
+    <meta name="description"
+        content="Toronto based fashion brand focusing on high quality essential wardrobe pieces and accessories.">
+    <meta name="keywords"
+        content="Fashion, Essestials, Wardrobe, T-shirts, Designer, Sustainable, Canadian, Local, Kata Kuzheleva">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=League+Script|Nothing+You+Could+Do|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <script type="text/JavaScript" src="functions.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76430307-1"></script>
+    <!-- Scroll spy -->
+    <script>
+        $('body').scrollspy({
+            target: '#product-images'
+        })
+
+        $('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh')
+        })
+    </script>
+    <script>
+        function stickyWidget($widget) {
+            $widget.each(function () {
+                var $this = $(this);
+
+                $win.on('scroll', function () {
+                    var headerH = $('.header').outerHeight();
+                    var scrollTop = $win.scrollTop();
+
+                    if (scrollTop > 1) {
+                        $this.toggleClass('fixed', $this.offset().top - headerH < scrollTop);
+                        $this.toggleClass('at-bottom', $this.offset().top + $this.height() < scrollTop +
+                            $win.height());
+                    } else if (scrollTop == 0) {
+                        $this.removeClass('fixed');
+                    }
+                });
+            });
+        }
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-76430307-1');
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#product-inner">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <header>
+
+        <!--Logo-->
+        <div class="container">
+            <div class="col-12 col-md-12 name">
+                <!--<h1 class="logo">Perfectly Normal</h1>-->
+                <img id="logo" src="images/Perfectly Normal Logo.svg" alt="Perfectly Normal Logo" width="30%">
+            </div>
+
+
+            <!--Navbar-->
+            <div class="box col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+                        <ul class="navbar-nav col-12">
+                            <li class="nav-item col-md-2">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a class="nav-link" href="women.html">Women</a>
+                            </li>
+                            <li class="nav-item col-md-3">
+                                <a class="nav-link" href="men.html">Men</a>
+                            </li>
+                            <li class="nav-item col-md-2">
+                                <a class="nav-link" href="accessories.html">Accessories</a>
+                            </li>
+                            <li class="nav-item col-md-3">
+                                <a class="nav-link active" href="shop.html">Shop</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="product row">
+                    <div id="product-images" class="list-group col-md-1">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">
+                            <div>
+                                <img class="scroll-image-item" src="images/value 1.jpg" alt="Front view">
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">
+                            <div>
+                                <img class="scroll-image-item" src="images/value 1.jpg" alt="Front view">
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">
+                            <div>
+                                <img class="scroll-image-item" src="images/value 1.jpg" alt="Front view">
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">
+                            <div>
+                                <img class="scroll-image-item" src="images/value 1.jpg" alt="Front view">
+                            </div>
+                        </a>
+                    </div>
+                    <div data-spy="scroll" data-target="#product-images" data-offset="0"
+                        class="scrollspy-example col-md-8">
+                        <div id="list-item-1">
+                            <img src="images/bag.jpg" alt="">
+                        </div>
+                        <p>...</p>
+                        <div id="list-item-2">
+                            <img src="images/bag.jpg" alt="">
+                        </div>
+                        <p>...</p>
+                        <div id="list-item-3">
+                            <img src="images/bag.jpg" alt="">
+                        </div>
+                        <p>...</p>
+                        <div id="list-item-4">
+                            <img src="images/bag.jpg" alt="">
+                        </div>
+                        <p>...</p>
+                    </div>
+                    <div class="product-description widget-sticky fixed at-bottom col-md-3">
+                        <div class="widget-contents">
+                            <header class="product-head">
+                                <h5 class="product-title">
+
+                                    Sanny Dress
+
+                                </h5>
+                                <h6 class="product-price">
+                                    <span class="regular-price">
+                                        $300
+                                    </span>
+
+                                </h6>
+                            </header>
+                            <div class="options">
+                                <div class="product-options-body">
+                                    <div>
+                                        <dt class="swatch-attr" data-target="option-size">
+                                            <label id="size-label" for="">
+                                                Size
+                                                <span id="select_label_size" class="select-label">
+                                                    <i class=""></i>
+
+                                                </span>
+                                            </label>
+                                        </dt>
+                                        <dd class="clearfix-swatch-attr last">
+                                            <div class="input-box">
+                                                <select name="super_attribute[134]" id="attribute134"
+                                                    class="required-entry super-attribute-select no-display swatch-select">
+                                                    <option value="">Choose an Option...</option>
+                                                    <option value="53" price="0" data-label="XS">XS</option>
+                                                    <option value="52" price="0" data-label="S">S</option>
+                                                    <option value="51" price="0" data-label="M">M</option>
+                                                    <option value="50" price="0" data-label="L">L</option>
+                                                </select>
+                                                <!--<ul id="configurable_swatch_size"
+                                                    class="configurable-swatch-list clearfix">
+                                                    <li class="option-46 selected not-available" id="option52">
+                                                        <a href="javascript:void(0)" name="46" id="swatch52"
+                                                            class="swatch-link swatch-link-134" title="46"
+                                                            style="height: 23px; min-width: 23px;">
+                                                            <span class="swatch-label"
+                                                                style="height: 21px; min-width: 21px; line-height: 21px;">
+                                                                S </span>
+                                                            <span class="x"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="option-48" id="option51">
+                                                        <a href="javascript:void(0)" name="48" id="swatch51"
+                                                            class="swatch-link swatch-link-134" title="48"
+                                                            style="height: 23px; min-width: 23px;">
+                                                            <span class="swatch-label"
+                                                                style="height: 21px; min-width: 21px; line-height: 21px;">
+                                                                M </span>
+                                                            <span class="x"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="option-50" id="option50">
+                                                        <a href="javascript:void(0)" name="50" id="swatch50"
+                                                            class="swatch-link swatch-link-134" title="50"
+                                                            style="height: 23px; min-width: 23px;">
+                                                            <span class="swatch-label"
+                                                                style="height: 21px; min-width: 21px; line-height: 21px;">
+                                                               L </span>
+                                                            <span class="x"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>-->
+
+                                                
+
+                                            </div>
+                                        </dd>
+                                        <p class="add-to-cart">
+                                                <button type="button" id="button" class="" title="Add to Cart" data-url="">
+                                                    <span>
+                                                        Add to Cart
+                                                    </span>
+                                                </button>
+        
+                                            </p>
+
+                                    </div>
+                                    <div class="product-content">
+                                        <h6>Details</h6>
+                                        <div class="list-details">
+                                            <div class="list-details-items">
+                                                <ul class="detail">
+                                                    <li>Full body length</li>
+                                                    <li>Dropped Shoulders</li>
+                                                    <li>Self fabric - 100% cotton</li>
+                                                    <li>Mother of pearl buttons</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
