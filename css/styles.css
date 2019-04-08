@@ -29,8 +29,23 @@ p {
     font-size: 1em;
     color: black;
 }
+/****************************** Bootstrap overrides ******************************************/
 
-/****************************** End of Font Styles ******************************************/
+a.btn.btn-info.btn-lg.btn-md {
+    width: 250px;
+    height: 60px;
+    background-color: rgba(212, 203, 201, 0);
+    border: none;
+    color: black;
+}
+a.btn.btn-info.btn-lg.btn-md.right {
+    text-align: right;
+}
+a.btn.btn-info.btn-lg.btn-md.left {
+    text-align: left;
+}
+
+/****************************** General ******************************************/
 body {
     position: relative;
 }
@@ -38,6 +53,7 @@ body {
 ul {
     list-style-type: none;
 }
+
 
 /* Logo font style */
 .logo {
@@ -121,8 +137,8 @@ button.navbar-toggler {
     }
 }
 
-/*        Body          *\
-\*                      */
+/****************************** Body ******************************************/
+
 a.carousel-control-prev {
     color: black;
 }
@@ -136,11 +152,15 @@ a.carousel-control-prev {
 }
 
 .row {
-    padding-top: 40pt;
+    padding-top: 20pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
 }
 
-/*           Section Banner                  *\         
-\*                                           */
+
+
+/****************************** Section Banner ******************************************/
+
 .carousel-caption {
     right: 15%;
     bottom: 150px;
@@ -153,8 +173,9 @@ a.carousel-control-prev {
 
 }
 
-/*           Section Latest                 *\         
-\*                                          */
+
+        
+/******************************  Section Latest ******************************************/
 
 .section-latest {
     position: relative;
@@ -164,7 +185,9 @@ a.carousel-control-prev {
     justify-content: space-between;
 }
 
-
+.tile-items {
+    margin-bottom: 1.8em;
+}
 
 .tile-content {
     width: 90%;
@@ -176,357 +199,465 @@ a.carousel-control-prev {
     .tile-content {
         width: 70%;
     }
+
     .tile-items {
-     width: 100%;
+        width: 100%;
     }
 }
 
 
-    @media (min-width: 576px) and (max-width: 767.98px) {
-        
-        .tile-content{
-            width: 70%;
-           }
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .tile-content {
+        width: 70%;
     }
+}
 
 
-    @media (min-width: 768px) and (max-width: 991.98px) {
-        .tile-content{
-            width: 90%;
-           }
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .tile-content {
+        width: 90%;
     }
+}
 
 
-    @media (min-width: 1200px) {
-        .tile-content {
-            width: 100%;
-           }
+@media (min-width: 1200px) {
+    .tile-content {
+        width: 100%;
     }
+}
 
 
 
-    /****************************** Parallax Section ******************************************/
+/****************************** Parallax article section ******************************************/
 
-    .parallax {
-        /* The image used */
-        background-image: url("banner image dr 1.jpg");
+.parallax {
+    /* The image used */
+    background-image: url("banner image dr 1.jpg");
 
-        /* Set a specific height */
-        min-height: 400px;
+    /* Set a specific height */
+    min-height: 400px;
 
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax.article {
+    background-image: url("drawing\ 2.jpg");
+
+    /* Set a specific height */
+    min-height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax h2 {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+
+.parallax p {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+/******************************  Section Story One ******************************************/
+.image-text {
+    position: absolute;
+    top: 160pt;
+    left: 100pt;
+}
+
+.image-text-p {
+    position: absolute;
+    top: 200pt;
+    left: 100pt;
+}
+.btn.btn-info.btn-lg.btn-md {
+    padding: 0px 0px 0px 0px;
+}
+.story-image-button{
+    position: absolute;
+    top: 230pt;
+    left: 100pt;
+}
+a.btn.btn-info.btn-lg.btn-md.left.image-btn {
+    position: absolute;
+    top: 230pt;
+    left: 100pt;
+}
+.story-image {
+    width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    .story-image {
+        width: 70%;
     }
-
-    .parallax h2 {
-        color: black;
-        font-size: 60px;
+    .image-text  {
+        position: unset; 
         text-align: center;
-        padding-top: 60px;
-        line-height: 100px;
+
     }
-
-    .parallax p {
-        font-size: 24px;
-        color: black;
-        text-align: center;
-        line-height: 60px;
-    }
-
-    /****************************** End of Parallax Section ******************************************/
-
-    .small-image {
-        margin-bottom: 20px;
-    }
-
-    .image-text {
-        position: absolute;
-        top: 260pt;
-        left: 100pt;
-    }
-
     .image-text-p {
-        position: absolute;
-        top: 300pt;
-        left: 100pt;
-    }
-
-    .name {
+        position: unset; 
         text-align: center;
-        padding-top: 15pt;
-        padding-bottom: 10pt;
+    }
+    .story-image-button{
+        position: unset;
+        text-align: center;
+    
+    }
+    a.btn.btn-info.btn-lg.btn-md.left {
+        text-align: center !important;
+    }
+    a.btn.btn-info.btn-lg.btn-md.left.image-btn {
+        position: unset; 
+
+    }
+    
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .story-image {
+        width: 70%;
+    }
+    .image-text  {
+        position: unset; 
+        text-align: center;
+
+    }
+    .image-text-p {
+        position: unset; 
+        text-align: center;
+    }
+    .story-image-button{
+        position: unset;
+        text-align: center;
+    
+    }
+    a.btn.btn-info.btn-lg.btn-md.left {
+        text-align: center !important;
+        
+    }
+   
+    a.btn.btn-info.btn-lg.btn-md.left.image-btn {
+        position: unset; 
+        text-align: center !important;
+        
 
     }
 
-    .caption {
-        position: absolute;
-        font-weight: 500;
-        font-size: 1.7em;
-        color: black;
-        font-style: italic;
-        margin-top: 60px;
+    
+    
+}
 
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .story-image {
+        width: 80%;
     }
-
-    .banner {
-        max-width: 100%;
-        margin-top: 40pt;
-        align-content: center;
-        border: 10pt;
-        border-color: #FBEFEF;
-        border-style: solid;
-    }
-
-    .header {
-        padding: 0;
-
-    }
-
-    /* Row with image and text */
+}
 
 
-    /*.flexbox {
+@media (min-width: 1200px) {
+   
+}
+
+
+.small-image {
+    margin-bottom: 20px;
+}
+
+
+
+.name {
+    text-align: center;
+    padding-top: 15pt;
+    padding-bottom: 10pt;
+
+}
+
+.caption {
+    position: absolute;
+    font-weight: 500;
+    font-size: 1.7em;
+    color: black;
+    font-style: italic;
+    margin-top: 60px;
+
+}
+
+.banner {
+    max-width: 100%;
+    margin-top: 40pt;
+    align-content: center;
+    border: 10pt;
+    border-color: #FBEFEF;
+    border-style: solid;
+}
+
+.header {
+    padding: 0;
+
+}
+
+/* Row with image and text */
+
+
+/*.flexbox {
     display: flex;
     flex-wrap: wrap;*/
 
 
-    .graphic_line {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
+.graphic_line {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
-    .line {
-        width: 100%;
-    }
+.line {
+    width: 100%;
+}
 
-    /****************************** Values ******************************************/
-    .values h2 {
-        text-align: center;
-        font-size: 2em;
-    }
+/****************************** Values ******************************************/
+.values h2 {
+    text-align: center;
+    font-size: 2em;
+}
 
-    /****************************** End Values ******************************************/
+/****************************** End Values ******************************************/
 
-    /****************************** Designer Statement ******************************************/
+/****************************** Designer Statement ******************************************/
 
-    .section-statement {
-        position: relative;
-    }
+.section-statement {
+    position: relative;
+}
 
-    .section-statement.section-inner {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
+.section-statement.section-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
-    .section-statement.fixed.section-inner {
-        position: fixed;
-        top: 151px;
-    }
+.section-statement.fixed.section-inner {
+    position: fixed;
+    top: 151px;
+}
 
-    .section-statement.at-bottom.section-inner {
-        position: absolute;
-        top: auto;
-        bottom: 0;
-    }
+.section-statement.at-bottom.section-inner {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+}
 
-    #inside-text {
-        height: 400px;
-        overflow: scroll;
-    }
+#inside-text {
+    height: 400px;
+    overflow: scroll;
+}
 
-    .inner-section {
-        width: 100%;
-        margin: auto;
-    }
+.inner-section {
+    width: 100%;
+    margin: auto;
+}
 
-    .inside-text {
-        max-width: 60%;
-        display: block;
-        flex-flow: row;
-        text-align: center;
-        margin: auto;
-        background: #fff;
-    }
+.inside-text {
+    max-width: 60%;
+    display: block;
+    flex-flow: row;
+    text-align: center;
+    margin: auto;
+    background: #fff;
+}
 
-    .section-inner.image {
-        display: flex;
-        justify-content: space-between;
+.section-inner.image {
+    display: flex;
+    justify-content: space-between;
 
-    }
+}
 
-    aside {
-        width: 20%;
-        padding-left: .5rem;
-        margin-left: .5rem;
-    }
+aside {
+    width: 20%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+}
 
-    .aside-element {
-        width: 20%;
-        display: flex !important;
-    }
+.aside-element {
+    width: 20%;
+    display: flex !important;
+}
+/*
+.left {
+    float: left !important;
+}
 
-    .left {
-        float: left !important;
-    }
+.right {
+    float: right !important;
+}
+*/
+.aside-image {
+    position: sticky;
+    top: 120px;
 
-    .right {
-        float: right !important;
-    }
-
-    .aside-image {
-        position: sticky;
-        top: 120px;
-
-    }
-
-
-
-    /****************************** End Designer Statement  ******************************************/
+}
 
 
 
-
-    .textbox {
-        font-family: 'Nothing You Could Do', cursive;
-        font-size: 1.6em !important;
-        display: flex;
-        flex-wrap: wrap;
-        color: black;
-        font-weight: 500;
-        /*padding: 20px 300px 20px 30px;*/
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .textbox-p {
-        font-family: 'Nothing You Could Do', cursive;
-        font-size: 2em;
-    }
-
-    .container {
-        width: 100%;
-        vertical-align: middle;
+/****************************** End Designer Statement  ******************************************/
 
 
-    }
-
-    .padding {
-        padding: 20px 20px 20px 20px;
-    }
-
-    .responsive {
-        width: 100%;
-        height: auto;
-
-    }
-
-    .strong {
-        font-size: 1.1em;
-        font-weight: 700;
-        color: #c22038;
-        /* font-weight: 700;*/
-    }
-
-    #image2 {
-        background: url(images/02.JPG);
-        background-size: cover;
-    }
-
-    #timeline {
-        width: 100%;
-        height: auto;
-        align-content: center;
-        background: url(images/03.JPG);
-        background-size: cover;
-
-    }
-
-    .contact {
-        font-family: 'Nothing You Could Do', cursive !important;
-        /*padding: 50px 150px 20px 150px;*/
-        font-size: 1.6em;
-        color: black;
-        text-shadow: 1px 2px 2px #fff;
-        font-style: italic;
-        text-align: left;
-    }
 
 
-    .center {
-        text-align: center;
-    }
+.textbox {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.6em !important;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-weight: 500;
+    /*padding: 20px 300px 20px 30px;*/
+    margin-bottom: 0;
+    text-align: center;
+}
 
-    #button {
-        background-color: white;
-        border-color: black;
-        width: 200px;
-        margin-bottom: 80px;
+.textbox-p {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2em;
+}
 
-    }
-
-
-    /*Footer background */
-    .page-footer {
-        font-family: 'Avenir Next', sans-serif;
-        background-color: black;
-        color: white;
-    }
-
-    .links {
-        font-family: 'Open Sans Light', sans-serif;
-        font-size: 0.8em;
-        font-weight: 300;
-        color: #fff;
-
-    }
-
-    .links:hover {
-        color: #FBEFEF;
-        text-decoration: underline;
-    }
-
-    /** Product page **/
-
-    .product {
-        max-height: 600px;
-    }
-
-    #product-inner {
-        max-height: 600px;
-    }
-
-    .scrollspy-example{
-        overflow: scroll;
-        height: 500px;
-    }
-
-    .scroll-image-item {
-        width: 100%;
-    }
-    .list-group-item {
-        padding: 0.15em 0.25em;
-        margin-bottom: 15px;
-        border: 0px;
-    }
+.container {
+    width: 100%;
+    vertical-align: middle;
 
 
-    a.list-group-item.list-group-item-action.active {
-        background-color: rgba(212, 203, 201, 0.2);
-        border: none;
-    }
+}
 
-    ul.detail {
-        font-size: 14px;
-        padding: 10px;
-    }
+.padding {
+    padding: 20px 20px 20px 20px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+
+}
+
+.strong {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #c22038;
+    /* font-weight: 700;*/
+}
+
+#image2 {
+    background: url(images/02.JPG);
+    background-size: cover;
+}
+
+#timeline {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    background: url(images/03.JPG);
+    background-size: cover;
+
+}
+
+.contact {
+    font-family: 'Nothing You Could Do', cursive !important;
+    /*padding: 50px 150px 20px 150px;*/
+    font-size: 1.6em;
+    color: black;
+    text-shadow: 1px 2px 2px #fff;
+    font-style: italic;
+    text-align: left;
+}
+
+
+.center {
+    text-align: center;
+}
+
+#button {
+    background-color: white;
+    border-color: black;
+    width: 200px;
+    margin-bottom: 80px;
+
+}
+
+
+/*Footer background */
+.page-footer {
+    font-family: 'Avenir Next', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.links {
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+.links:hover {
+    color: #FBEFEF;
+    text-decoration: underline;
+}
+
+/** Product page **/
+
+.product {
+    max-height: 600px;
+}
+
+#product-inner {
+    max-height: 600px;
+}
+
+.scrollspy-example {
+    overflow: scroll;
+    height: 500px;
+}
+
+.scroll-image-item {
+    width: 100%;
+}
+
+.list-group-item {
+    padding: 0.15em 0.25em;
+    margin-bottom: 15px;
+    border: 0px;
+}
+
+
+a.list-group-item.list-group-item-action.active {
+    background-color: rgba(212, 203, 201, 0.2);
+    border: none;
+}
+
+ul.detail {
+    font-size: 14px;
+    padding: 10px;
+}
