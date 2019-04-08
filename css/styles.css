@@ -477,6 +477,33 @@ a.btn.btn-info.btn-lg.btn-md.right.image-btn {
         text-align: center;
         font-size: 2em;
     }
+    .value-image {
+        width: 100%;
+    }
+
+    @media (max-width: 575.98px) {
+    
+    }
+    
+    
+    @media (min-width: 576px) and (max-width: 767.98px) {
+    
+        
+    }
+    
+    
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .value-image {
+            width: 80%;
+        }
+    }
+    
+    
+    @media (min-width: 1200px) {
+        .tile-content {
+            width: 90%;
+        }
+    }
 
     /****************************** End Values ******************************************/
 
@@ -543,7 +570,7 @@ a.btn.btn-info.btn-lg.btn-md.right.image-btn {
         display: flex !important;
     }
 
-    /*
+    
 .left {
     float: left !important;
 }
@@ -551,7 +578,7 @@ a.btn.btn-info.btn-lg.btn-md.right.image-btn {
 .right {
     float: right !important;
 }
-*/
+
     .aside-image {
         position: sticky;
         top: 120px;
